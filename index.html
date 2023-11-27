@@ -1,0 +1,1001 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- <link rel="stylesheet" href="./css/bootstrap.css" /> -->
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com./css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/bootstrap-icons.css" />
+  <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+</head>
+
+<body>
+  <div class="sticky-whole-nav">
+    <nav class="contained-wrapper main-navbar navbar navbar-expand-lg navbar-light">
+      <button style="height: 40px; border: none" class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <img src="./images/menu-bar.png" height="16px" width="auto" />
+      </button>
+      <a class="navbar-brand" href="/">
+        <img src="./images/upskilingPNG-logo.jpg" height="48px" width="auto" />
+      </a>
+      <a href="/search.html">
+        <img src="./images/search-icon.png" height="24px" width="auto" />
+      </a>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="ms-4 me-auto d-none d-lg-block">
+          <a class="dropdown nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Explore
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+        <ul class="navbar-nav mt-5 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./course_list.html">Courses</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">Categories</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="./partners.html">Partners</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#">Blogs</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item d-none d-lg-block">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+          <li class="nav-item d-none d-lg-block">
+            <a class="btn btn-primary" href="signup.html">Join our community</a>
+          </li>
+        </ul>
+        <div class="d-flex d-lg-none flex-column mt-4">
+          <a class="btn btn-primary w-100" href="#">Login</a>
+          <a class="btn btn-plain w-100 mt-3" href="#">Join our community</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="full-width-wrapper">
+    <section class="hero-banner">
+      <div class="contained-wrapper">
+        <div class="d-flex align-items-center h-100">
+          <div class="col-12 col-md-6 d-flex flex-column">
+            <h1 class="hero-tagline mb-3">
+              Influence the Future, Learn Anywhere at Anytime
+            </h1>
+            <p class="sub-tag mb-4">
+              Stay ahead in your professional development. Learn new knowledge
+              and skills online.
+            </p>
+            <div class="d-flex align-items-center">
+              <a class="btn btn-secondary me-4" href="#">Join our community</a>
+              <a href="#" class="text-white">It’s absolutely free!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="bg-light-1">
+    <div class="contained-wrapper pt-6 pb-6">
+      <section class="section-courses-container">
+        <div class="section-header d-flex align-items-center">
+          <h3 class="section-title me-auto">Courses to get you started</h3>
+          <a href="" class="fw-bold">View all Courses</a>
+        </div>
+        <!-- <div class="section-tabs d-flex mt-4 pb-4">
+          <button class="btn btn-primary btn-filter-course" data-key="latest">Latest</button>
+          <button class="btn btn-filter-course" data-key="most-popular">Most Popular</button>
+          <button class="btn btn-filter-course" data-key="free">Free</button>
+          <button class="btn btn-filter-course" data-key="trending">Trending</button>
+        </div> -->
+        <div class="row pt-3 gutter-2rem courses-list-container">
+        </div>
+        <!-- <div class="row pt-3 gutter-2rem">
+          <div class="col-12 col-md-6 col-lg-4">
+            <a href="course-single-page.html">
+              <div class="course-item">
+                <div class="category-badge" style="background-color: #387aa6">
+                  Information Technology
+                </div>
+                <img class="img-item" height="auto" width="100%" src="./images/course-placeholder.png" />
+                <div class="course-details-container">
+                  <div class="d-flex align-items-center">
+                    <img class="me-1" height="auto" width="32px" src="./images/course-company-placeholder.png" />
+                    <h2 class="course-title">I ACADEMY</h2>
+                  </div>
+                  <p class="course-description mt-2 pb-3">
+                    Using HTML and CSS to design website
+                  </p>
+                  <div class="course-start">Class Starts:</div>
+                  <span class="course-start-date">May 1, 2023</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <a href="course-single-page.html">
+              <div class="course-item">
+                <div class="category-badge" style="background-color: #d94cdc">
+                  Business
+                </div>
+                <img class="img-item" height="auto" width="100%" src="./images/course-placeholder-2.png" />
+                <div class="course-details-container">
+                  <div class="d-flex align-items-center">
+                    <img class="me-1" height="auto" width="32px" src="./images/course-company-placeholder-2.png" />
+                    <h2 class="course-title">upskillingPNG</h2>
+                  </div>
+                  <p class="course-description mt-2 pb-3">
+                    Project Management Fundamentals
+                  </p>
+                  <div class="course-start">Class Starts:</div>
+                  <span class="course-start-date">May 1, 2023</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <a href="course-single-page.html">
+              <div class="course-item">
+                <div class="category-badge" style="background-color: #e39600">
+                  Communication
+                </div>
+                <img class="img-item" height="auto" width="100%" src="./images/course-placeholder-3.png" />
+                <div class="course-details-container">
+                  <div class="d-flex align-items-center">
+                    <img class="me-1" height="auto" width="32px" src="./images/course-company-placeholder-2.png" />
+                    <h2 class="course-title">upskillingPNG</h2>
+                  </div>
+                  <p class="course-description mt-2 pb-3">
+                    Communication Enhancement Course
+                  </p>
+                  <div class="course-start">Class Starts:</div>
+                  <span class="course-start-date">May 1, 2023</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <a href="course-single-page.html">
+              <div class="course-item">
+                <div class="category-badge" style="background-color: #e36d00">
+                  Marketing
+                </div>
+                <img class="img-item" height="auto" width="100%" src="./images/course-placeholder.png" />
+                <div class="course-details-container">
+                  <div class="d-flex align-items-center">
+                    <img class="me-1" height="auto" width="32px" src="./images/course-company-placeholder-2.png" />
+                    <h2 class="course-title">upskillingPNG</h2>
+                  </div>
+                  <p class="course-description mt-2 pb-3">
+                    Using HTML and CSS to design website
+                  </p>
+                  <div class="course-start">Class Starts:</div>
+                  <span class="course-start-date">May 1, 2023</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <a href="course-single-page.html">
+              <div class="course-item">
+                <div class="category-badge" style="background-color: #387aa6">
+                  Information Technology
+                </div>
+                <img class="img-item" height="auto" width="100%" src="./images/course-placeholder-2.png" />
+                <div class="course-details-container">
+                  <div class="d-flex align-items-center">
+                    <img class="me-1" height="auto" width="32px" src="./images/course-company-placeholder.png" />
+                    <h2 class="course-title">I ACADEMY</h2>
+                  </div>
+                  <p class="course-description mt-2 pb-3">
+                    Using HTML and CSS to design website
+                  </p>
+                  <div class="course-start">Class Starts:</div>
+                  <span class="course-start-date">May 1, 2023</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <a href="course-single-page.html">
+              <div class="course-item">
+                <div class="category-badge" style="background-color: #d94cdc">
+                  Business
+                </div>
+                <img class="img-item" height="auto" width="100%" src="./images/course-placeholder.png" />
+                <div class="course-details-container">
+                  <div class="d-flex align-items-center">
+                    <img class="me-1" height="auto" width="32px" src="./images/course-company-placeholder.png" />
+                    <h2 class="course-title">I ACADEMY</h2>
+                  </div>
+                  <p class="course-description mt-2 pb-3">
+                    Using HTML and CSS to design website
+                  </p>
+                  <div class="course-start">Class Starts:</div>
+                  <span class="course-start-date">May 1, 2023</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div> -->
+      </section>
+    </div>
+  </div>
+  <!-- <div class="contained-wrapper pt-6 pb-6">
+    <section class="section-platform-container">
+      <div class="section-header d-flex align-items-center">
+        <h3 class="section-title">
+          Elevate your professional and personal growth
+        </h3>
+      </div>
+      <div class="row mt-4 gutter-2rem">
+        <div class="col-12 col-md-6">
+          <img width="100%" height="auto" src="./images/the-platform1.png" />
+          <div class="mt-4">
+            <h3>Future Skills Courses</h3>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia.
+            </p>
+            <a class="btn btn-primary" href="future-skill-courses.html">View All Courses</a>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <img width="100%" height="auto" src="./images/the-platform2.png" />
+          <div class="mt-4">
+            <h3>Soft Skills Courses</h3>
+            <p>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia.
+            </p>
+            <a class="btn btn-primary" href="softskills-courses.html">View All Courses</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div> -->
+
+  <!-- <div class="bg-light-1">
+    <div class="contained-wrapper pt-6 pb-6">
+      <section class="section-specialization-bundle-container">
+        <div class="section-header d-flex align-items-center">
+          <h3 class="section-title me-auto">Specialization bundle</h3>
+          <a href="" class="fw-bold">View all bundles</a>
+        </div>
+        <div class="section-tabs d-flex mt-4 pb-4">
+          <button class="btn btn-primary btn-filter-course" data-key="latest">Latest</button>
+          <button class="btn btn-filter-course" data-key="most-popular">Most Popular</button>
+          <button class="btn btn-filter-course" data-key="free">Free</button>
+          <button class="btn btn-filter-course" data-key="trending">Trending</button>
+        </div>
+        <div class="section-tabs d-flex mt-4 pb-4">
+          <button class="btn btn-primary">Information Technology</button>
+          <button class="btn">Business</button>
+          <button class="btn">Data Science</button>
+          <button class="btn">Security</button>
+          <button class="btn">Marketing</button>
+          <button class="btn">Design</button>
+        </div>
+        <div class="row pt-3 gutter-2rem">
+          <div class="col-12 col-md-6 col-lg-4">
+            <a href="specialization-course.html">
+              <div class="specialization-bundle-item">
+                <img height="auto" width="100%" src="./images/specialization-bundle.png" />
+                <div class="specialization-bundle-details-container">
+                  <h5>Information Technology</h5>
+                  <div class="d-flex align-items-center">
+                    <h2 class="item-title">UI / UX Designer Track</h2>
+                  </div>
+                  <span>May 1, 2023</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <a href="specialization-course.html">
+              <div class="specialization-bundle-item">
+                <img height="auto" width="100%" src="./images/specialization-bundle2.png" />
+                <div class="specialization-bundle-details-container">
+                  <h5>Business</h5>
+                  <div class="d-flex align-items-center">
+                    <h2 class="item-title">Microsoft Office Professional</h2>
+                  </div>
+                  <span>May 1, 2023</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <a href="specialization-course.html">
+              <div class="specialization-bundle-item">
+                <img height="auto" width="100%" src="./images/specialization-bundle3.png" />
+                <div class="specialization-bundle-details-container">
+                  <h5>Information Technology</h5>
+                  <div class="d-flex align-items-center">
+                    <h2 class="item-title">Mastering Frontend Development</h2>
+                  </div>
+                  <span>May 1, 2023</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="d-flex d-lg-none justify-content-center mt-5">
+          <a href="" class="fw-bold">View all bundles</a>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="contained-wrapper pt-6 pb-6">
+    <section class="section-specialization-bundle-container">
+      <div class="section-header d-flex align-items-center">
+        <h3 class="section-title me-auto">Specialization Program</h3>
+        <a href="" class="fw-bold">View all Program</a>
+      </div>
+      <div class="row mt-1 gutter-2rem specialization-program-list">
+        <div class="col-12 col-md-6 col-lg-4">
+          <a href="">
+            <div class="specialization-bundle-item">
+              <img height="auto" width="100%" src="./images/specialization-bundle.png" />
+              <div class="specialization-bundle-details-container border-none">
+                <h5>Information Technology</h5>
+                <div class="d-flex align-items-center">
+                  <h2 class="item-title">UI / UX Designer Track</h2>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <a href="">
+            <div class="specialization-bundle-item">
+              <img height="auto" width="100%" src="./images/specialization-bundle2.png" />
+              <div class="specialization-bundle-details-container border-none">
+                <h5>Business</h5>
+                <div class="d-flex align-items-center">
+                  <h2 class="item-title">Microsoft Office Professional</h2>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <a href="">
+            <div class="specialization-bundle-item">
+              <img height="auto" width="100%" src="./images/specialization-bundle3.png" />
+              <div class="specialization-bundle-details-container border-none">
+                <h5>Information Technology</h5>
+                <div class="d-flex align-items-center">
+                  <h2 class="item-title">Mastering Frontend Development</h2>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="d-flex d-lg-none justify-content-center mt-5">
+        <a href="" class="fw-bold">View all Courses</a>
+      </div>
+    </section>
+  </div> -->
+
+  <!-- <div class="bg-dark-1">
+    <div class="contained-wrapper pt-6 pb-6">
+      <section class="category-section">
+        <div class="section-header d-flex align-items-center">
+          <h3 class="section-title me-auto text-white">Browse by Category</h3>
+          <a href="" class="fw-bold text-white">View all Courses</a>
+        </div>
+        <div class="row mt-1 gutter-2rem">
+          <div class="col-12 col-md-6 col-lg-3">
+            <a href="">
+              <div class="d-flex bg-white align-items-center category-item py-4">
+                <img class="me-3" height="auto" width="35px" src="./images/categories/management.png" />
+                <h4 class="mb-0 py-3">Management</h4>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <a href="">
+              <div class="d-flex bg-white align-items-center category-item py-4">
+                <img class="me-3" height="auto" width="35px" src="./images/categories/engineering.png" />
+                <h4 class="mb-0 py-3">Engineering</h4>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <a href="">
+              <div class="d-flex bg-white align-items-center category-item py-4">
+                <img class="me-3" height="auto" width="35px" src="./images/categories/sales.png" />
+                <h4 class="mb-0 py-3">Sales</h4>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <a href="">
+              <div class="d-flex bg-white align-items-center category-item py-4">
+                <img class="me-3" height="auto" width="35px" src="./images/categories/marketing.png" />
+                <h4 class="mb-0 py-3">Marketing</h4>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <a href="">
+              <div class="d-flex bg-white align-items-center category-item py-4">
+                <img class="me-3" height="auto" width="35px" src="./images/categories/finance.png" />
+                <h4 class="mb-0 py-3">Finance</h4>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <a href="">
+              <div class="d-flex bg-white align-items-center category-item py-4">
+                <img class="me-3" height="auto" width="35px" src="./images/categories/HR.png" />
+                <h4 class="mb-0 py-3">HR</h4>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <a href="">
+              <div class="d-flex bg-white align-items-center category-item py-4">
+                <img class="me-3" height="auto" width="35px" src="./images/categories/IT.png" />
+                <h4 class="mb-0 py-3">IT</h4>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <a href="">
+              <div class="d-flex bg-white align-items-center category-item py-4">
+                <img class="me-3" height="auto" width="35px" src="./images/categories/operation.png" />
+                <h4 class="mb-0 py-3">Operations</h4>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div> -->
+
+  <!-- <div class="contained-wrapper pt-6 pb-6">
+    <section class="section-testimonials">
+      <div class="section-header d-flex align-items-center">
+        <h3 class="section-title me-auto fw-light">
+          What our students says about upskillingPNG
+        </h3>
+        <div class="d-flex slick-navigation">
+          <i class="bi bi-arrow-left-short testi-slider-prev"></i>
+          <i class="bi bi-arrow-right-short ms-3 testi-slider-next"></i>
+        </div>
+      </div>
+      <div class="row mt-5 gutter-2rem testimonial-slider">
+        <div class="testimonial-item col">
+          <a href="">
+            <div class="bg-light-1 p-5">
+              <p class="text-black">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <div class="d-flex align-items-center pt-1">
+                <img class="me-2" height="52px" width="52px" src="./images/avatar/tisha.png" />
+                <p class="mb-0 fw-bold text-dark-1">Richard D'Amore DDS</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="testimonial-item col">
+          <a href="">
+            <div class="bg-light-1 p-5">
+              <p class="text-black">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <div class="d-flex align-items-center pt-1">
+                <img class="me-2" height="52px" width="52px" src="./images/avatar/tisha.png" />
+                <p class="mb-0 fw-bold text-dark-1">Rudolph Kreiger</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="testimonial-item col">
+          <a href="">
+            <div class="bg-light-1 p-5">
+              <p class="text-black">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <div class="d-flex align-items-center pt-1">
+                <img class="me-2" height="52px" width="52px" src="./images/avatar/tisha.png" />
+                <p class="mb-0 fw-bold text-dark-1">Bobby Huel</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="testimonial-item col">
+          <a href="">
+            <div class="bg-light-1 p-5">
+              <p class="text-black">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <div class="d-flex align-items-center pt-1">
+                <img class="me-2" height="52px" width="52px" src="./images/avatar/tisha.png" />
+                <p class="mb-0 fw-bold text-dark-1">Tisha Reynolds I</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="testimonial-item col">
+          <a href="">
+            <div class="bg-light-1 p-5">
+              <p class="text-black">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <div class="d-flex align-items-center pt-1">
+                <img class="me-2" height="52px" width="52px" src="./images/avatar/tisha.png" />
+                <p class="mb-0 fw-bold text-dark-1">Tisha Reynolds I</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="testimonial-item col">
+          <a href="">
+            <div class="bg-light-1 p-5">
+              <p class="text-black">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <div class="d-flex align-items-center pt-1">
+                <img class="me-2" height="52px" width="52px" src="./images/avatar/tisha.png" />
+                <p class="mb-0 fw-bold text-dark-1">Tisha Reynolds I</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div> -->
+
+  <div class="bg-light-1">
+    <div class="contained-wrapper pt-6 pb-6">
+      <section class="section-partners">
+        <div class="section-header d-flex align-items-center">
+          <h3 class="section-title me-auto">Our Partners</h3>
+        </div>
+        <div class="row mt-4 gutter-2rem justify-content-center">
+          <div class="partner-item col-12 col-md-4 col-lg-2">
+            <div class="d-flex justify-content-center bg-white">
+              <img height="133px" width="180px" src="./images/partners/tmtg-logo.png" />
+            </div>
+          </div>
+          <div class="partner-item col-12 col-md-4 col-lg-2">
+            <div class="d-flex justify-content-center bg-white">
+              <img height="133px" width="80px" src="./images/partners/asl-logo.png" />
+            </div>
+          </div>
+          <div class="partner-item col-12 col-md-4 col-lg-2">
+            <div class="d-flex justify-content-center bg-white">
+              <img height="133px" width="100px" src="./images/partners/hytr-logo.jpg" />
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- <div class="contained-wrapper pt-6 pb-6">
+    <section class="section-blogs-container">
+      <div class="section-header d-flex align-items-center">
+        <h3 class="section-title me-auto">Latest Blogs</h3>
+      </div>
+      <div class="row mt-1 gutter-2rem">
+        <div class="col-12 col-md-6 col-lg-4">
+          <a href="">
+            <div class="item-container">
+              <img height="auto" width="100%" src="./images/blogs/blog-1.png" />
+              <div class="details-container border-none">
+                <div class="d-flex flex-column">
+                  <h2 class="item-title">UI / UX Designer Track</h2>
+                  <p class="mt-2">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s
+                  </p>
+                  <a class="mt-1">Read More</a>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <a href="">
+            <div class="item-container">
+              <img height="auto" width="100%" src="./images/blogs/blog-2.png" />
+              <div class="details-container border-none">
+                <div class="d-flex flex-column">
+                  <h2 class="item-title">UI / UX Designer Track</h2>
+                  <p class="mt-2">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s
+                  </p>
+                  <a class="mt-1">Read More</a>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <a href="">
+            <div class="item-container">
+              <img height="auto" width="100%" src="./images/blogs/blog-3.png" />
+              <div class="details-container border-none">
+                <div class="d-flex flex-column">
+                  <h2 class="item-title">UI / UX Designer Track</h2>
+                  <p class="mt-2">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s
+                  </p>
+                  <a class="mt-1">Read More</a>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div> -->
+
+  <section class="CTA-Main bg-cta-gradient">
+    <div class="contained-wrapper bg-overlay-img pt-6 pb-6">
+      <div class="col-12 col-md-12 col-lg-6 col-xl-5">
+        <div class="d-flex flex-column justify-content-center h-100">
+          <h1>Want to get the latest updates from us?</h1>
+          <p>
+            Stay connected and be in the know by subscribing to our newsletter, where you'll receive the latest updates, news, and course launch directly to your inbox!
+          </p>
+          <a class="btn text-primary"
+            href="http://sendy.upskillingPNG.ph/subscription?f=h7639Z8y2GPrxoIyel9A6U892OzYJzX5ZUnqmIU86koxveECfyjtQSKurB1cjjnql892zz">Subscribe</a>
+
+          <!-- <form id="subscribe" class="d-flex">
+            <input namke="email" type="text" class="form-control me-3" placeholder="Enter your email" />
+            <button class="btn text-primary">Subscribe</button>
+          </form> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark-1 pt-6 pb-6">
+    <div class="contained-wrapper">
+      <div class="row">
+        <div class="col-12 col-md-4 mb-5">
+          <div class="pe-4">
+            <div class="pe-5">
+              <img class="mb-3" height="48px" width="auto" src="./images/upskillingPNG-white.png" />
+              <p>
+                Empowering career advancement of Filipinos through Massive Open Online Courses
+              </p>
+              <button class="btn btn-primary mt-2">Join our community</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-8">
+          <div class="row">
+            <div class="col-6 col-md-4">
+              <h5 class="ul-title mb-4">upskillingPNG</h5>
+              <ul>
+                <li><a class="text-light" href="/about.html">About</a></li>
+                <li><a class="text-light" href="/courses">Courses</a></li>
+                <!-- <li><a class="text-light" href="">Categories</a></li> -->
+                <li><a class="text-light" href="/courses?latest">Latest Courses</a></li>
+              </ul>
+            </div>
+            <div class="col-4">
+              <h5 class="ul-title mb-4">Community</h5>
+              <ul>
+                <li><a class="text-light" href="/partners">Latest Courses</a></li>
+                <!-- <li><a class="text-light" href="/blog">Blogs</a></li> -->
+              </ul>
+            </div>
+            <div class="col-4">
+              <h5 class="ul-title mb-4">More</h5>
+              <ul>
+                <li><a class="text-light" href="/privacy.html">Security</a></li>
+                <li><a class="text-light" href="/tos.html">Terms of Service</a></li>
+                <li><a class="text-light" href="/honor.html">Honor Code</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-bottom pt-3">
+        <p class="me-auto order-lg-0 order-1 mt-5 mt-lg-0">
+          © Copyright 2023 upskillingPNG. All rights reserved.
+        </p>
+        <div class="footer-socials order-lg-1 order-0">
+          <img height="32px" width="32px" src="./images/social/facebook.png" />
+          <img height="32px" width="32px" src="./images/social/instagram.png" />
+          <img height="32px" width="32px" src="./images/social/twitter.png" />
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/jquery-3.1.1.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="./js/slick.min.js"></script>
+
+  <script src="./js/scripts.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".testimonial-slider").slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        prevArrow: false,
+        nextArrow: false,
+        // variableWidth: true,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      });
+      // $(".partners-slider").slick({
+      //   dots: false,
+      //   infinite: true,
+      //   speed: 300,
+      //   slidesToShow: 5,
+      //   slidesToScroll: 1,
+      //   prevArrow: false,
+      //   nextArrow: false,
+      //   centerMode: true,
+      //   variableWidth: true,
+      //   responsive: [
+      //     {
+      //       breakpoint: 1200,
+      //       settings: {
+      //         slidesToShow: 3,
+      //         slidesToScroll: 1,
+      //       },
+      //     },
+      //     {
+      //       breakpoint: 600,
+      //       settings: {
+      //         slidesToShow: 1,
+      //         slidesToScroll: 1,
+      //       },
+      //     },
+      //   ],
+      // });
+      $(".testi-slider-next").click(function () {
+        $(".testimonial-slider").slick("slickNext");
+      });
+      $(".testi-slider-prev").click(function () {
+        $(".testimonial-slider").slick("slickPrev");
+      });
+
+      var coursesDataState;
+
+      var fetchCoursesTags = function (data) {
+        $.ajax({
+          url: "https://discovery.tmtg-clone.click/api/v1/courses/",
+          success: function (data) {
+            let coursesData = data.results;
+            coursesDataState = data.results;
+            coursesData = coursesData.slice(0, 6)
+            coursesData.forEach((course) => {
+              console.log(course);
+              $('.courses-list-container').append(generateCoursesHtml(course));
+            });
+          },
+          error: function (xhr, status, error) {
+            console.log(error);
+          }
+        })
+      }();
+
+      var fetchPrograms = function (data) {
+        $.ajax({
+          url: "https://discovery.tmtg-clone.click/api/v1/programs/",
+          success: function (data) {
+            let programsData = data.results;
+            if (programsData.length > 3) {
+              programsData = programsData.slice(0, 3)
+            } else {
+              programsData = programsData;
+            }
+            programsData.forEach((course) => {
+              $('.specialization-program-list').append(generateSpecializationProgramsHtml(course));
+            });
+          },
+          error: function (xhr, status, error) {
+            console.log(error);
+          }
+        })
+      }();
+
+      $('.btn-filter-course').click(function () {
+        $('.btn-filter-course').removeClass('btn-primary');
+        $(this).addClass('btn-primary');
+        fetchCourseWithFilter($(this).attr('data-key'));
+      });
+
+      var fetchCourseWithFilter = function (filter) {
+        // let testFilter = ["course-v1:Adarna+AD101+2019_T3", "course-v1:upskillingPNG+CB002.1+2021_Q1"];
+        // console.log(coursesDataState);
+        // let g = coursesDataState.filter((course) => {
+        //   return testFilter.includes(course.canonical_course_run_key);
+        // });
+        // console.log(g);
+        // $('.courses-list-container').html('');
+        // g.forEach((course) => {
+        //   $('.courses-list-container').append(generateCoursesHtml(course));
+        // });
+        $.ajax({
+          url: "https://tmtg-clone.click/api/courses/" + filter,
+          // url: "https://648a779a17f1536d65e925f9.mockapi.io/test",
+          success: function (data) {
+            let coursefilter = data;
+
+            coursefilter = coursefilter.map((filter) => filter.course_id)
+
+            let g = coursesDataState.filter((course) => {
+              return coursefilter.includes(course.canonical_course_run_key);
+            });
+
+            console.log(g);
+
+            g.forEach((course) => {
+              $('.courses-list-container').append(generateCoursesHtml(course));
+            });
+          },
+          error: function (xhr, status, error) {
+            console.log(error);
+          }
+        })
+      }
+    });
+
+    var generateCoursesHtml = function (data) {
+      let courseBadge = "";
+      if (data && data.topics && data.topics[0]) {
+        courseBadge = '<div class="category-badge" style="background-color: #387aa6">' + data.topics[0] + '</div>';
+      }
+      return '<div id="' + data.canonical_course_run_key + '" class="col-12 col-md-6 col-lg-4 course-item-container">' +
+        '<a href="/courses/' + data.canonical_course_run_key + '">' +
+        '<div class="course-item">' +
+        courseBadge +
+        '<img height="auto" width="100%" src="' + data.card_image_url + '" alt="' + data.title + '">' +
+        '<div class="course-details-container">' +
+        '<div class="d-flex align-items-center">' +
+        // '<img class="me-1" height="auto" width="32px" src="/static/cb-custom./images/course-company-placeholder.a05c35868243.png">' +
+        '<h2 class="course-title">upskillingPNG</h2>' +
+        '</div>' +
+        '<p class="course-description mt-2 pb-3">' + data.title + '</p>' +
+        '<div class="course-start">Class Starts:</div>' +
+        '<span class="course-start-date">May 1, 2023</span>' +
+        '</div>' +
+        '</div>' +
+        '</a>' +
+        '</div>'
+    }
+
+    var generateSpecializationProgramsHtml = function (data) {
+      return '<div class="col-12 col-md-6 col-lg-4">' +
+        '<a href="">' +
+        '<div class="specialization-bundle-item ">' +
+        '<img height="auto" width="100%" al="' + data.title + '" src="' + data.card_image_url + '" class="img-item" />' +
+        '<div class="specialization-bundle-details-container border-none">' +
+        '<h5>Information Technology</h5>' +
+        '<div class="d-flex align-items-center">' +
+        '<h2 class="item-title">' + data.title + '</h2>' +
+        '</div>' +
+        '</div>' +
+        '</div>' +
+        '</a>' +
+        '</div>';
+    }
+
+    // $('#subscribe').click(function(e){
+    //   e.preventDefault();
+    //   $(this).html('<p><b>The subscription feature is currently unavaiable right now.</b></p>');
+    // });
+
+    // programsData.forEach((course) => {
+    //   $('.specialization-program-list').append(generateSpecializationProgramsHtml(course));
+    // });
+
+    // const result = coursesData.filter(num => num.course_id == "course-v1:upskillingPNG+CB001+2020_Q1");
+    // console.log(result[0].primary_topic.name);
+
+
+    // $('.course-item-container').each(function (i, obj) {
+    //   let courseItemDetails = coursesData.filter(num => num.canonical_course_run_key == $(obj).attr('id'));
+    //   console.log(courseItemDetails[0]);
+    //   if(courseItemDetails[0] && courseItemDetails[0].topics &&  courseItemDetails[0].topics[0]){
+    //     // console.log(courseItemDetails[0].topics[0]);
+    //     let course_primary_topic = courseItemDetails[0].topics[0];
+    //     $(obj).find('.category-badge').text(course_primary_topic);
+    //   } else {
+    //     $(obj).find('.category-badge').remove();
+    //   }
+    // });
+  </script>
+</body>
+
+</html>

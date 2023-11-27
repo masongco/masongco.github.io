@@ -1,0 +1,717 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="stylesheet" href="./css/bootstrap.css" /> -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com./css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+</head>
+
+<body>
+    <div class="sticky-whole-nav">
+        <nav class="contained-wrapper main-navbar navbar navbar-expand-lg navbar-light">
+            <button style="height: 40px; border: none" class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <img src="./images/menu-bar.png" height="16px" width="auto" />
+            </button>
+            <a class="navbar-brand" href="/">
+                <img src="./images/upskilingPNG-logo.jpg" height="48px" width="auto" />
+            </a>
+            <a>
+                <img src="./images/search-icon.png" height="24px" width="auto" />
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="ms-4 me-auto d-none d-lg-block">
+                    <a class="dropdown nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Explore
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+                <ul class="navbar-nav mt-5 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./course_list.html">Courses</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Categories</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="./partners.html">Partners</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Blogs</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block">
+                        <a class="btn btn-primary" href="signup.html">Join our community</a>
+                    </li>
+                </ul>
+                <div class="d-flex d-lg-none flex-column mt-4">
+                    <a class="btn btn-primary w-100" href="#">Login</a>
+                    <a class="btn btn-plain w-100 mt-3" href="#">Join our community</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="contained-wrapper pt-4 pb-6">
+        <section class="section-courses-search-container">
+            <div class="row">
+                <div class="col-3">
+                    <h4 class="mt-2 pb-3">Filter By</h4>
+                    <input type="text" class="form-control search-input mt-4" placeholder="Search Keyword" />
+                    <div class="side-menus">
+                        <h5 class="mt-5">Primary Topic</h5>
+                        <ul class="mt-3 subject-filters">
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="Management">
+                                    <label class="form-check-label">
+                                        Management
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="Engineering">
+                                    <label class="form-check-label">
+                                        Engineering
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="Finance">
+                                    <label class="form-check-label">
+                                        Finance
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="HR">
+                                    <label class="form-check-label">
+                                        HR
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                        <span class="btn-show show-more-subject">Show more</span>
+                    </div>
+                    <div class="side-menus">
+                        <h5 class="mt-5">Skills</h5>
+                        <ul class="mt-3 skill-filters">
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="Algorithms">
+                                    <label class="form-check-label">
+                                        Algorithms
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="Agile Software Development">
+                                    <label class="form-check-label">
+                                        Agile Software Development
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="Audit">
+                                    <label class="form-check-label">
+                                        Audit
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="BlockChain">
+                                    <label class="form-check-label">
+                                        BlockChain
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                        <span class="btn-show show-more-skills">Show more</span>
+                    </div>
+                    <div class="side-menus">
+                        <h5 class="mt-5">Organizations</h5>
+                        <ul class="mt-3 organization-filters">
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="Coursebank">
+                                    <label class="form-check-label">
+                                        Coursebank
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="Sparta">
+                                    <label class="form-check-label">
+                                        Sparta
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="DCIT">
+                                    <label class="form-check-label">
+                                        DCIT
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="iAcademy">
+                                    <label class="form-check-label">
+                                        iAcademy
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                        <span class="btn-show show-more-organization">Show more</span>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div class="contained-wrapper">
+                        <section class="section-courses-container">
+                            <div class="section-header d-flex align-items-center">
+                                <h3 class="section-title me-auto"><span id="resultCount"></span> results <span id="query-search"></span></h3>
+                            </div>
+                            <div class="row pt-5 gutter-2rem courses-list-container">
+                                <!-- <div class="col-12 col-md-6 col-lg-4">
+                                    <a href="course-single-page.html">
+                                        <div class="course-item">
+                                            <div class="category-badge" style="background-color: #387aa6">
+                                                Information Technology
+                                            </div>
+                                            <img class="img-item" height="auto" width="100%"
+                                                src="./images/course-placeholder.png" />
+                                            <div class="course-details-container">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="me-1" height="22.7px" width="auto"
+                                                        src="./images/course-company-placeholder.png" />
+                                                    <h2 class="course-title">I ACADEMY</h2>
+                                                </div>
+                                                <p class="course-description mt-2 pb-3">
+                                                    Using HTML and CSS to design website
+                                                </p>
+                                                <div class="course-start">Class Starts:</div>
+                                                <span class="course-start-date">May 1, 2023</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <a href="course-single-page.html">
+                                        <div class="course-item">
+                                            <div class="category-badge" style="background-color: #d94cdc">
+                                                Business
+                                            </div>
+                                            <img class="img-item" height="auto" width="100%"
+                                                src="./images/course-placeholder-2.png" />
+                                            <div class="course-details-container">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="me-1" height="auto" width="32px"
+                                                        src="./images/course-company-placeholder-2.png" />
+                                                    <h2 class="course-title">Coursebank</h2>
+                                                </div>
+                                                <p class="course-description mt-2 pb-3">
+                                                    Project Management Fundamentals
+                                                </p>
+                                                <div class="course-start">Class Starts:</div>
+                                                <span class="course-start-date">May 1, 2023</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <a href="course-single-page.html">
+                                        <div class="course-item">
+                                            <div class="category-badge" style="background-color: #e39600">
+                                                Communication
+                                            </div>
+                                            <img class="img-item" height="auto" width="100%"
+                                                src="./images/course-placeholder-3.png" />
+                                            <div class="course-details-container">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="me-1" height="auto" width="32px"
+                                                        src="./images/course-company-placeholder-2.png" />
+                                                    <h2 class="course-title">Coursebank</h2>
+                                                </div>
+                                                <p class="course-description mt-2 pb-3">
+                                                    Communication Enhancement Course
+                                                </p>
+                                                <div class="course-start">Class Starts:</div>
+                                                <span class="course-start-date">May 1, 2023</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <a href="course-single-page.html">
+                                        <div class="course-item">
+                                            <div class="category-badge" style="background-color: #e36d00">
+                                                Marketing
+                                            </div>
+                                            <img class="img-item" height="auto" width="100%"
+                                                src="./images/course-placeholder.png" />
+                                            <div class="course-details-container">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="me-1" height="auto" width="32px"
+                                                        src="./images/course-company-placeholder-2.png" />
+                                                    <h2 class="course-title">Coursebank</h2>
+                                                </div>
+                                                <p class="course-description mt-2 pb-3">
+                                                    Using HTML and CSS to design website
+                                                </p>
+                                                <div class="course-start">Class Starts:</div>
+                                                <span class="course-start-date">May 1, 2023</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <a href="course-single-page.html">
+                                        <div class="course-item">
+                                            <div class="category-badge" style="background-color: #387aa6">
+                                                Information Technology
+                                            </div>
+                                            <img class="img-item" height="auto" width="100%"
+                                                src="./images/course-placeholder-2.png" />
+                                            <div class="course-details-container">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="me-1" height="auto" width="32px"
+                                                        src="./images/course-company-placeholder.png" />
+                                                    <h2 class="course-title">I ACADEMY</h2>
+                                                </div>
+                                                <p class="course-description mt-2 pb-3">
+                                                    Using HTML and CSS to design website
+                                                </p>
+                                                <div class="course-start">Class Starts:</div>
+                                                <span class="course-start-date">May 1, 2023</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <a href="course-single-page.html">
+                                        <div class="course-item">
+                                            <div class="category-badge" style="background-color: #d94cdc">
+                                                Business
+                                            </div>
+                                            <img class="img-item" height="auto" width="100%"
+                                                src="./images/course-placeholder.png" />
+                                            <div class="course-details-container">
+                                                <div class="d-flex align-items-center">
+                                                    <img class="me-1" height="auto" width="32px"
+                                                        src="./images/course-company-placeholder.png" />
+                                                    <h2 class="course-title">I ACADEMY</h2>
+                                                </div>
+                                                <p class="course-description mt-2 pb-3">
+                                                    Using HTML and CSS to design website
+                                                </p>
+                                                <div class="course-start">Class Starts:</div>
+                                                <span class="course-start-date">May 1, 2023</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div> -->
+                            </div>
+                        </section>
+                        <div class="d-flex justify-content-center mt-5">
+                            <nav aria-label="...">
+                                <ul class="pagination ">
+                                    <li class="page-item prev" data-direction="prev">
+                                        <a class="page-link" href="#">Previous</a>
+                                    </li>
+                                    <div class="d-flex course-pagination-list">
+    
+                                    </div>
+                                    <li class="page-item next" data-direction="next">
+                                        <a class="page-link" href="#">Next</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="bg-dark-1 pt-5 pb-5">
+        <div class="contained-wrapper">
+            <div class="row">
+                <div class="col-12 col-md-4 mb-5">
+                    <div class="pe-4">
+                        <div class="pe-5">
+                            <img class="mb-3" height="48px" width="auto" src="./images/upskillingPNG-white.png" />
+                            <p>
+                                Empowering career advancement of Filipinos through Massive Open Online Courses
+                            </p>
+                            <button class="btn btn-primary mt-2">Join our community</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8">
+                    <div class="row">
+                        <div class="col-6 col-md-4">
+                            <h5 class="ul-title mb-4">upskillingPNG</h5>
+                            <ul>
+                                <li><a class="text-light" href="/about.html">About</a></li>
+                                <li><a class="text-light" href="/courses">Courses</a></li>
+                                <!-- <li><a class="text-light" href="">Categories</a></li> -->
+                                <li><a class="text-light" href="/courses?latest">Latest Courses</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <h5 class="ul-title mb-4">Community</h5>
+                            <ul>
+                                <li><a class="text-light" href="/partners">Latest Courses</a></li>
+                                <!-- <li><a class="text-light" href="/blog">Blogs</a></li> -->
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <h5 class="ul-title mb-4">More</h5>
+                            <ul>
+                                <li><a class="text-light" href="/privacy.html">Security</a></li>
+                                <li><a class="text-light" href="/tos.html">Terms of Service</a></li>
+                                <li><a class="text-light" href="/honor.html">Honor Code</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="footer-bottom pt-3">
+                <p class="me-auto order-lg-0 order-1 mt-5 mt-lg-0">
+                    © Copyright 2023 upskillingPNG. All rights reserved.
+                </p>
+                <div class="footer-socials order-lg-1 order-0">
+                    <img height="32px" width="32px" src="./images/social/facebook.png" />
+                    <img height="32px" width="32px" src="./images/social/instagram.png" />
+                    <img height="32px" width="32px" src="./images/social/twitter.png" />
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist./js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script></script>
+    <script>
+        var subjectFilter = [];
+        var skillFilter = [];
+        var organizationFilter = [];
+    
+        var subjectFilterData = [];
+        var skillFilterData = [];
+        var organizationFilterData = [];
+    
+        $(document).ready(function () {
+            $('.show-more-subject').click(function () {
+                subjectFilterData.slice(4).forEach((subject) => {
+                    $('.subject-filters').append(generateFilters(subject.name, subject.slug));
+                });
+                $(this).hide();
+            });
+    
+            $('.show-more-skills').click(function () {
+                skillFilterData.slice(4).forEach((skill) => {
+                    $('.skill-filters').append(generateFilters(skill.name, skill.slug));
+                });
+                $(this).hide();
+            });
+    
+            $('.show-more-organization').click(function () {
+                organizationFilterData.slice(4).forEach((org) => {
+                    $('.organization-filters').append(generateFilters(org.key, org.key));
+                });
+                $(this).hide();
+            });
+    
+            //initialize filters
+            var initFilters = function () {
+                $.ajax({
+                    url: "https://discovery.coursebank.ph/api/v1/subjects/",
+                    success: function (data) {
+                        subjectFilterData = data.results;
+    
+                        $('.subject-filters').html('');
+                        subjectFilterData.slice(0, 4).forEach((subject) => {
+                            $('.subject-filters').append(generateFilters(subject.name, subject.slug));
+                        });
+                    },
+                    error: function (xhr, status, error) {
+                        console.log(error);
+                    }
+                })
+                $.ajax({
+                    url: "https://discovery.coursebank.ph/taxonomy/api/v1/skills/",
+                    success: function (data) {
+                        skillFilterData = data.results;
+                        $('.skill-filters').html('');
+                        skillFilterData.slice(0, 4).forEach((skill) => {
+                            $('.skill-filters').append(generateFilters(skill.name, skill.name));
+                        });
+                    },
+                    error: function (xhr, status, error) {
+                        console.log(error);
+                    }
+                })
+                $.ajax({
+                    url: "https://discovery.coursebank.ph/api/v1/organizations/",
+                    success: function (data) {
+                        organizationFilterData = data.results;
+                        $('.organization-filters').html('');
+                        organizationFilterData.slice(0, 4).forEach((org) => {
+                            $('.organization-filters').append(generateFilters(org.key, org.key));
+                        });
+                    },
+                    error: function (xhr, status, error) {
+                        console.log(error);
+                    }
+                })
+            }();
+    
+            $('.subject-filters').on("click", ".form-check-input", function () {
+                if (subjectFilter.includes($(this).val())) {
+                    subjectFilter = subjectFilter.filter((subject) => {
+                        return subject != $(this).val();
+                    });
+                } else {
+                    subjectFilter.push($(this).val());
+                }
+                currentPage = 1;
+                fetchCourseWithFilter();
+    
+            });
+            $('.skill-filters').on("click", ".form-check-input", function () {
+                if (skillFilter.includes($(this).val())) {
+                    skillFilter = skillFilter.filter((skill) => {
+                        return skill != $(this).val();
+                    });
+                } else {
+                    skillFilter.push($(this).val());
+                }
+                currentPage = 1;
+                fetchCourseWithFilter();
+            });
+            $('.organization-filters').on("click", ".form-check-input", function () {
+                if (organizationFilter.includes($(this).val())) {
+                    organizationFilter = organizationFilter.filter((org) => {
+                        return org != $(this).val();
+                    });
+                } else {
+                    organizationFilter.push($(this).val());
+                }
+                currentPage = 1;
+                fetchCourseWithFilter();
+            });
+    
+            var itemsPerPage = 20;
+            var numItems = 0;
+            const urlParams = new URLSearchParams(window.location.search);
+            var currentPage = urlParams.get('page');
+            const q = urlParams.get('q');
+            const subjects = urlParams.get('subjects');
+            const skills = urlParams.get('skills');
+            const organizations = urlParams.get('organizations');
+    
+            var offsetSize = 0;
+            // if (currentPage) {
+            //     offsetSize = currentPage * itemsPerPage;
+            // }
+    
+            // if(q){
+            //     $(".search-input").val(q);
+            // }
+    
+            $(".search-input").on('keyup', function (e) {
+                if (e.key === 'Enter' || e.keyCode === 13) {
+                    currentPage = 1;
+                    fetchCourseWithFilter();
+                }
+            });
+    
+            var fetchCourseWithFilter = function () {
+                if (currentPage != 1 && currentPage != null) {
+                    offsetSize = currentPage * itemsPerPage - 20;
+                } else {
+                    offsetSize = 0;
+                }
+    
+                numItems = 0;
+                var searchQuery = $('.search-input').val();
+                let subjectStrings = "";
+                subjectFilter.forEach((subject) => {
+                    if (subjectStrings == "") {
+                        subjectStrings += subject;
+                    } else {
+                        subjectStrings += ',' + subject;
+                    }
+                });
+                let skillStrings = "";
+                skillFilter.forEach((skill) => {
+                    if (skillStrings == "") {
+                        skillStrings += skill;
+                    } else {
+                        skillStrings += ',' + skill;
+                    }
+                });
+                let organizationStrings = "";
+                organizationFilter.forEach((org) => {
+                    if (organizationStrings == "") {
+                        organizationStrings += org;
+                    } else {
+                        organizationStrings += ',' + org;
+                    }
+                });
+                $.ajax({
+                    url: "https://discovery.coursebank.ph/api/v1/courses/?offset=" + offsetSize + "&q=" + searchQuery + "&subjects=" + encodeURIComponent(subjectStrings) + "&skills=" + encodeURIComponent(skillStrings) + "&organizations=" + encodeURIComponent(organizationStrings) + "",
+                    // url: "https://648a779a17f1536d65e925f9.mockapi.io/test",
+                    success: function (data) {
+                        $('.courses-list-container').html('');
+                        $('#resultCount').html(data.count);
+                        if (searchQuery != "") {
+                            $('#query-search').html("for “" + searchQuery + "”");
+                        } else {
+                            $('#query-search').html("");
+                        }
+                        let coursesData = data.results;
+                        coursesData.forEach((course) => {
+                            $('.courses-list-container').append(generateCoursesHtml(course));
+                        });
+                        numItems = data.count;
+    
+                        console.log(numItems);
+                        var numPages = Math.ceil(numItems / itemsPerPage);
+                        console.log(numPages);
+    
+                        var currpage = parseInt(currentPage);
+                        $('.prev').html('');
+                        $('.next').html('');
+                        $(".course-pagination-list").html('');
+                        $('.prev').html('<a class="page-link" href="?page=' + (currpage - 1) + '">Previous</a>');
+                        $('.next').html('<a class="page-link" href="?page=' + (currpage + 1) + '">Next</a>');
+    
+                        if (numPages == currentPage) {
+                            $('.next').addClass("disabled");
+                        }
+    
+                        if (numPages == 1) {
+                            $('.prev').addClass("disabled");
+                        }
+    
+                        if (numItems == 0) {
+                            $('.pagination').hide();
+                        } else {
+                            $('.pagination').show();
+                        }
+                        var queryParams = "&q=" + searchQuery + "&subjects=" + encodeURIComponent(subjectStrings) + "&skills=" + encodeURIComponent(skillStrings) + "&organizations=" + encodeURIComponent(organizationStrings);
+                        for (var i = 1; i <= numPages; i++) {
+                            if (currentPage == i) {
+                                var $link = '<li class="page-item active" aria-current="page"><span class="page-link">' + i + '</span></li>';
+                            } else {
+                                if (currentPage == null && i == 1) {
+                                    var $link = '<li class="page-item active" aria-current="page"><span class="page-link">' + i + '</span></li>';
+                                } else {
+                                    var $link = '<li class="page-item"><a class="page-link change-page" data-page-num="' + i + '" href="#">' + i + '</a></li>';
+                                }
+                            }
+                            $(".course-pagination-list").append($link);
+                        }
+                    },
+                    error: function (xhr, status, error) {
+                        console.log(error);
+                    }
+                })
+            }
+            fetchCourseWithFilter();
+            $('.course-pagination-list').on('click', '.change-page', function () {
+                currentPage = $(this).attr('data-page-num');
+                fetchCourseWithFilter();
+            });
+    
+            var generateCoursesHtml = function (data) {
+                let courseBadge = "";
+                if (data && data.topics && data.topics[0]) {
+                    courseBadge = '<div class="category-badge" style="background-color: #387aa6">' + data.topics[0] + '</div>';
+                }
+    
+                const ownerKey = (data.owners && data.owners.length > 0) ? data.owners[0].key : '';
+                const startDate = (data.course_runs && data.course_runs.length > 0) ? data.course_runs[0].start : '';
+    
+                const formatDate = (dateString) => {
+                    if (!dateString) {
+                      return 'To be announced';
+                    }
+                    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                    const date = new Date(dateString);
+                    return new Intl.DateTimeFormat('en-US', options).format(date);
+                };
+    
+                return '<div id="' + data.canonical_course_run_key + '" class="col-12 col-md-6 col-lg-4 course-item-container">' +
+                    '<a href="/courses/' + data.canonical_course_run_key + '/about">' +
+                    '<div class="course-item">' +
+                    courseBadge +
+                    '<img height="auto" width="100%" src="' + data.card_image_url + '" alt="' + data.title + '">' +
+                    '<div class="course-details-container">' +
+                    '<div class="d-flex align-items-center">' +
+                    // '<img class="me-1" height="auto" width="32px" src="/static/cb-custom./images/course-company-placeholder.a05c35868243.png">' +
+                    '<h2 class="course-title">' + ownerKey + '</h2>' +
+                    '</div>' +
+                    '<p class="course-description mt-2 pb-3">' + data.title + '</p>' +
+                    '<div class="course-start">Class Starts:</div>' +
+                    '<span class="course-start-date">' + formatDate(startDate) + '</span>' +
+                    '</div>' +
+                    '</div>' +
+                    '</a>' +
+                    '</div>'
+            }
+    
+            var generateFilters = function (name, value) {
+                return '<li>' +
+                    '<div class="form-check">' +
+                    '<input class="form-check-input" type="checkbox" value="' + value + '">' +
+                    '<label class="form-check-label">' + name + '</label>' +
+                    '</div>' +
+                    '</li>';
+            }
+        });
+    </script>
+</body>
+
+</html>
