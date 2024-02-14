@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+}
+nav {
+    display: flex;
+    padding: 1.25rem 15.71875rem 1.0625rem 14.1875rem;
+    align-items: center;
+    justify-content: space-between;
+    background: #002555;
+}
+.navbar-brand{
+    text-decoration: none;
+    color: #FFF;
+}
+.CTA{
+    width: 44.59863rem;
+    height: 15.125rem;
+    flex-shrink: 0;
+}
+.btn{
+    border-radius: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.btn-primary{
+    display: inline-flex;
+    padding: 0.71875rem 6.93175rem 1.28125rem 6.94325rem;
+    align-items: flex-start;
+    background-color: #8588E3;
+    color: #FFF;
+}
+.btn-primary::before{
+    width: 20rem;
+    height: 2.875rem;
+    position: absolute;
+    top: -0.15625rem;
+    box-shadow: 0px 4px 0px 0px #6F79D7;
+}
