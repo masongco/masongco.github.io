@@ -16,13 +16,13 @@
 
     <section class="container-3">
         <div class="d-flex">
-            <div class="side-nav">
-                <a href="#">Dashboard</a>
-                <a href="#">Exams</a>
-                <a href="#">Review</a>
-                <a href="#">Leaderboards</a>
+            <div class="side-nav tabs">
+                <a class="tab active" href="#" onclick="changeTab(event, 'tab1')">Dashboard</a>
+                <a class="tab" href="#" onclick="changeTab(event, 'tab2')">Exams</a>
+                <a class="tab" href="#" onclick="changeTab(event, 'tab3')">Review</a>
+                <a class="tab" href="#" onclick="changeTab(event, 'tab4')">Leaderboards</a>
             </div>
-            <div class="col-8 main-content pt-3">
+            <div id="tab1" class="col-8 main-content pt-3 px-3 tab-content">
                 <h5>Dashboard</h5>
                 <p class="mt-3">Continue your work</p>
                 <div class="card-container d-flex flex-column">
@@ -32,8 +32,104 @@
                     </div>
                 </div>
                 <hr>
-
             </div>
+            <div id="tab2" class="col-8 main-content pt-3 px-3 tab-content" style="display: none;">
+              <h5>Exams</h5>
+                <p class="mt-3">Continue your work</p>
+                <div class="card-container-2 d-flex flex-row">
+                    <div class="exam-card-2 mr-3">
+                        <h5>Card Title</h5>
+                        <p>Card Description</p>
+                    </div>
+                    <div class="exam-card-2 mr-3">
+                        <h5>Card Title</h5>
+                        <p>Card Description</p>
+                    </div>
+                    <div class="exam-card-2 mr-3">
+                        <h5>Card Title</h5>
+                        <p>Card Description</p>
+                    </div>
+                    <div class="exam-card-2 mr-3">
+                        <h5>Card Title</h5>
+                        <p>Card Description</p>
+                    </div>
+                    <div class="exam-card-2 mr-3">
+                        <h5>Card Title</h5>
+                        <p>Card Description</p>
+                    </div>
+                </div>
+                <hr>
+                <p class="mt-3">Quizzes</p>
+                <div class="card-container-2 d-flex flex-row">
+                    <div class="quiz-card-2 mr-3">
+                        <h5>Card Title</h5>
+                        <p>Card Description</p>
+                    </div>
+                    <div class="quiz-card-2 mr-3">
+                        <h5>Card Title</h5>
+                        <p>Card Description</p>
+                    </div>
+                    <div class="quiz-card-2 mr-3">
+                        <h5>Card Title</h5>
+                        <p>Card Description</p>
+                    </div>
+                    <div class="quiz-card-2 mr-3">
+                        <h5>Card Title</h5>
+                        <p>Card Description</p>
+                    </div>
+                    <div class="quiz-card-2 mr-3">
+                        <h5>Card Title</h5>
+                        <p>Card Description</p>
+                    </div>
+                </div>
+                <hr>
+                <p class="mt-3">Recommended</p>
+                <div class="card-container-2 d-flex flex-row">
+                    <div class="exam-card-3 mr-3">
+                        <h5>Card Title</h5>
+                        <p>Card Description</p>
+                    </div>
+                    <div class="exam-card-3 mr-3">
+                        <h5>Card Title</h5>
+                        <p>Card Description</p>
+                    </div>
+                    <div class="exam-card-3 mr-3">
+                        <h5>Card Title</h5>
+                        <p>Card Description</p>
+                    </div>
+                    <div class="exam-card-3 mr-3">
+                        <h5>Card Title</h5>
+                        <p>Card Description</p>
+                    </div>
+                    <div class="exam-card-3 mr-3">
+                        <h5>Card Title</h5>
+                        <p>Card Description</p>
+                    </div>
+                </div>
+                <hr>
+          </div>
+          <div id="tab3" class="col-8 main-content pt-3 px-3 tab-content">
+            <h5>Review</h5>
+            <p class="mt-3">Continue your work</p>
+            <div class="card-container d-flex flex-column">
+                <div class="exam-card">
+                    <h5>Card Title</h5>
+                    <p>Card Description</p>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div id="tab4" class="col-8 main-content pt-3 px-3 tab-content">
+          <h5>Leaderboards</h5>
+          <p class="mt-3">Continue your work</p>
+          <div class="card-container d-flex flex-column">
+              <div class="exam-card">
+                  <h5>Card Title</h5>
+                  <p>Card Description</p>
+              </div>
+          </div>
+          <hr>
+      </div>
             <div class="col extras m-4">
                 <div class="extra-content">
                     <div class="d-flex flex-row align-items-center justify-content-between">
@@ -100,5 +196,33 @@
       </div>
     </section>
   </footer>
+  <script>
+    function changeTab(event, tabId) {
+    // Prevent default link behavior
+    event.preventDefault();
 
+    // Get all tab content elements
+    var tabContents = document.getElementsByClassName("tab-content");
+
+    // Hide all tab content
+    for (var i = 0; i < tabContents.length; i++) {
+        tabContents[i].style.display = "none";
+    }
+
+    // Get all tab links
+    var tabs = document.getElementsByClassName("tab");
+
+    // Remove active class from all tabs
+    for (var i = 0; i < tabs.length; i++) {
+        tabs[i].classList.remove("active");
+    }
+
+    // Show the clicked tab content
+    document.getElementById(tabId).style.display = "block";
+
+    // Add active class to the clicked tab
+    event.target.classList.add("active");
+}
+  </script>
+</body>
 </html>

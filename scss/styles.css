@@ -158,13 +158,7 @@ footer {
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
-}
-
-.side-nav a {
-  color: #4B4B4B;
-  text-align: left;
-  padding: 0.5rem 2rem;
-  margin: 0.5rem 2rem;
+  padding: 1rem;
 }
 
 .container-3 {
@@ -241,4 +235,23 @@ footer {
   padding: 15px 15px;
   color: #FFF;
   border-radius: 0.8rem;
+}
+
+.tab {
+  display: flex;
+  padding: 0.625rem 6.78231rem 0.625rem 1.125rem;
+  align-items: center;
+  color: #4B4B4B;
+  border-radius: 0.75rem;
+  height: 40px;
+  width: 200px;
+}
+
+.tab.active {
+  color: #1CB0F6;
+  border-radius: 0.75rem;
+  border: 2px solid #84D8FF;
+  background: #DDF4FF;
+  max-height: 243.25px;
+  width: 200px;
 }/*# sourceMappingURL=styles.css.map */
